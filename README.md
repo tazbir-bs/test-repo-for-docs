@@ -15,11 +15,19 @@ Before submitting a pull request, please make sure to go through the following c
 7. **Compatibility**: Ensure your changes do not break existing functionality and are compatible with the current codebase.
 8. **Pull Request Description**: Provide a clear and concise description of your changes in the pull request.
 
-## How to Run the Project
+## How to Run the Project Locally
 
 To run the Taxi Hailing Service locally, follow these steps:
 
-1. **Clone the Repository**: 
+### Prerequisites
+
+- Node.js installed
+- npm or yarn package manager installed
+- MongoDB installed and running
+
+### Instructions
+
+1. **Clone the Repository**:
    ```bash
    git clone https://github.com/your-username/taxi-hailing-service.git
    cd taxi-hailing-service
@@ -33,12 +41,15 @@ To run the Taxi Hailing Service locally, follow these steps:
 3. **Configure Environment Variables**:
    Create a `.env` file based on the provided `.env.example` and fill in the necessary values.
 
-4. **Run the Application**:
+4. **Start the MongoDB Server**:
+   Ensure your MongoDB server is running.
+
+5. **Run the Application**:
    ```bash
    npm start  # or yarn start
    ```
 
-5. **Access the Application**:
+6. **Access the Application**:
    Open your browser and navigate to `http://localhost:3000` (or the specified port in your `.env` file).
 
 ## High-Level Feature List
