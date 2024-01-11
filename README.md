@@ -90,7 +90,7 @@ To deploy the Taxi Hailing Service in a production environment, follow these dep
 For detailed deployment instructions, refer to our [deployment guide](docs/deployment.md).
 
 
-### 7.1 Some code style guidelines
+### Some code style guidelines
 
 - Use stage-2 and higher JavaScript (modern) syntax for new projects. For old project stay consistent with existing syntax unless you intend to modernise the project.
 
@@ -185,5 +185,23 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
   > While `prettier` itself can be very powerful, it's not very productive to run it simply as an npm task alone each time to format code. This is where `lint-staged` (and `husky`) come into play. Read more on configuring `lint-staged` [here](https://github.com/okonet/lint-staged#configuration) and on configuring `husky` [here](https://github.com/typicode/husky).
 
 <a name="logging"></a>
+
+## 8. Logging
+
+![Logging](/images/logging.png)
+
+- Avoid client-side console logs in production
+
+  _Why:_
+
+  > Even though your build process can (should) get rid of them, make sure that your code style checker warns you about leftover console logs.
+
+- Produce readable production logging. Ideally use logging libraries to be used in production mode (such as [winston](https://github.com/winstonjs/winston) or
+  [node-bunyan](https://github.com/trentm/node-bunyan)).
+
+      _Why:_
+      > It makes your troubleshooting less unpleasant with colorization, timestamps, log to a file in addition to the console or even logging to a file that rotates daily. [read more...](https://blog.risingstack.com/node-js-logging-tutorial/)
+
+<a name="api"></a>
 
 Thank you for your interest in our Taxi Hailing Service! If you have any questions or encounter any issues, please don't hesitate to open an issue or reach out to our support team. Happy coding!
