@@ -90,6 +90,7 @@ To deploy the Taxi Hailing Service in a production environment, follow these dep
 For detailed deployment instructions, refer to our [deployment guide](docs/deployment.md).
 
 
+<a name="code-style"></a>
 ### Some code style guidelines
 
 - Use stage-2 and higher JavaScript (modern) syntax for new projects. For old project stay consistent with existing syntax unless you intend to modernise the project.
