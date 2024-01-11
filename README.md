@@ -516,7 +516,6 @@ These are some basic security best practices:
 
 ## Git
 
-![Git](/images/branching.png)
 <a name="some-git-rules"></a>
 
 ### Some Git rules
