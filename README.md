@@ -92,6 +92,66 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
 
 <a name="code-style"></a>
 ## Some code style guidelines
+### Structure and Naming
+
+- Organize your files around product features / pages / components, not roles. Also, place your test files next to their implementation.
+
+  **Bad**
+
+  ```
+  .
+  ├── controllers
+  |   ├── product.js
+  |   └── user.js
+  ├── models
+  |   ├── product.js
+  |   └── user.js
+  ```
+
+  **Good**
+
+  ```
+  .
+  ├── product
+  |   ├── index.js
+  |   ├── product.js
+  |   └── product.test.js
+  ├── user
+  |   ├── index.js
+  |   ├── user.js
+  |   └── user.test.js
+  ```
+
+  _Why:_
+
+  > Instead of a long list of files, you will create small modules that encapsulate one responsibility including its test and so on. It gets much easier to navigate through and things can be found at a glance.
+
+- Put your additional test files to a separate test folder to avoid confusion.
+
+  _Why:_
+
+  > It is a time saver for other developers or DevOps experts in your team.
+
+- Use a `./config` folder and don't make different config files for different environments.
+
+  _Why:_
+
+  > When you break down a config file for different purposes (database, API and so on); putting them in a folder with a very recognizable name such as `config` makes sense. Just remember not to make different config files for different environments. It doesn't scale cleanly, as more deploys of the app are created, new environment names are necessary.
+  > Values to be used in config files should be provided by environment variables. [read more...](https://medium.com/@fedorHK/no-config-b3f1171eecd5)
+
+- Put your scripts in a `./scripts` folder. This includes `bash` and `node` scripts.
+
+  _Why:_
+
+  > It's very likely you may end up with more than one script, production build, development build, database feeders, database synchronization and so on.
+
+- Place your build output in a `./build` folder. Add `build/` to `.gitignore`.
+
+  _Why:_
+
+  > Name it what you like, `dist` is also cool. But make sure that keep it consistent with your team. What gets in there is most likely generated (bundled, compiled, transpiled) or moved there. What you can generate, your teammates should be able to generate too, so there is no point committing them into your remote repository. Unless you specifically want to.
+
+
 
 - Use stage-2 and higher JavaScript (modern) syntax for new projects. For old project stay consistent with existing syntax unless you intend to modernise the project.
 
