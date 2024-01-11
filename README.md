@@ -186,7 +186,7 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
   > While `prettier` itself can be very powerful, it's not very productive to run it simply as an npm task alone each time to format code. This is where `lint-staged` (and `husky`) come into play. Read more on configuring `lint-staged` [here](https://github.com/okonet/lint-staged#configuration) and on configuring `husky` [here](https://github.com/typicode/husky).
 
 
-### 9.1 API design
+### API design
 
 _Why:_
 
