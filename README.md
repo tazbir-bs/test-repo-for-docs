@@ -189,7 +189,6 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
 
 ## 8. Logging
 
-![Logging](/images/logging.png)
 
 - Avoid client-side console logs in production
 
