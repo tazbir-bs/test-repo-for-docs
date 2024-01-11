@@ -187,7 +187,7 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
 
 <a name="logging"></a>
 
-## 8. Logging
+## Logging
 
 
 - Avoid client-side console logs in production
