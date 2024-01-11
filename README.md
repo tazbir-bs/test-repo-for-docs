@@ -514,12 +514,12 @@ These are some basic security best practices:
 
 <a name="git"></a>
 
-## 1. Git
+## Git
 
 ![Git](/images/branching.png)
 <a name="some-git-rules"></a>
 
-### 1.1 Some Git rules
+### Some Git rules
 
 There are a set of rules to keep in mind:
 
@@ -574,7 +574,7 @@ There are a set of rules to keep in mind:
 
 <a name="git-workflow"></a>
 
-### 1.2 Git workflow
+### Git workflow
 
 Because of most of the reasons above, we use [Feature-branch-workflow](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow) with [Interactive Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing#the-golden-rule-of-rebasing) and some elements of [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) (naming and having a develop branch). The main steps are as follows:
 
@@ -649,7 +649,7 @@ Because of most of the reasons above, we use [Feature-branch-workflow](https://w
 
 <a name="writing-good-commit-messages"></a>
 
-### 1.3 Writing good commit messages
+### Writing good commit messages
 
 Having a good guideline for creating commits and sticking to it makes working with Git and collaborating with others a lot easier. Here are some rules of thumb ([source](https://chris.beams.io/posts/git-commit/#seven-rules)):
 
