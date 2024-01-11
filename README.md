@@ -190,7 +190,7 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
 
 <a name="api-design"></a>
 
-![API](/images/api.png)
+
 
 ### 9.1 API design
 
