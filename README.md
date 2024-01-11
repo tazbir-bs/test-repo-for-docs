@@ -163,7 +163,7 @@ For detailed deployment instructions, refer to our [deployment guide](docs/deplo
 
 <a name="enforcing-code-style-standards"></a>
 
-### 7.2 Enforcing code style standards
+### Enforcing code style standards
 
 - Use a [.editorconfig](http://editorconfig.org/) file which helps developers define and maintain consistent coding styles between different editors and IDEs on the project.
 
