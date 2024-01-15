@@ -675,7 +675,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 - Use the body to explain **what** and **why** as opposed to **how**.
 
 
-# Project XYZ DevOps Practices
+# DevOps Practices
 
 ## Git Flow
 
