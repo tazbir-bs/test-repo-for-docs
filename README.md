@@ -493,6 +493,41 @@ These are some basic security best practices:
 <a name="api-documentation"></a>
 
 
+
+## Library Management System
+
+A simple Library Management System implemented with a database backend. This repository provides scripts for database updates, backup tools, database migrations using TypeORM, and an Entity Relationship Diagram (ERD).
+
+### Table of Contents
+
+- [Database Update Scripts](#database-update-scripts)
+  - [DDL Script (Create Tables)](#ddl-script-create-tables)
+  - [DML Script (Insert Data)](#dml-script-insert-data)
+- [Backup Scripts/Tools](#backup-scriptstools)
+- [DB Migration (Using TypeORM)](#db-migration-using-typeorm)
+  - [Author.entity.ts](#authorentityts)
+  - [Book.entity.ts](#bookentityts)
+- [Entity Relationship Diagram (ERD)](#entity-relationship-diagram-erd)
+
+## Database Update Scripts
+
+### DDL Script (Create Tables)
+
+```sql
+CREATE TABLE Authors (
+    AuthorID INT PRIMARY KEY,
+    AuthorName VARCHAR(100) NOT NULL
+);
+
+CREATE TABLE Books (
+    BookID INT PRIMARY KEY,
+    Title VARCHAR(255) NOT NULL,
+    AuthorID INT,
+    CONSTRAINT FK_AuthorID FOREIGN KEY (AuthorID) REFERENCES Authors(AuthorID)
+);
+
+
+
 <a name="logging"></a>
 
 ## Logging
