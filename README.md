@@ -448,7 +448,7 @@ _Why:_
 
 <a name="api-security"></a>
 
-### 9.2 API security
+### API security
 
 These are some basic security best practices:
 
